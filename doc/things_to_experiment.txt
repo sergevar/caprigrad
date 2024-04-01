@@ -1,0 +1,40 @@
+TODO
+
+[] 3d/4d matmul tests
+[] conv layer tests
+[] pool layer tests
+
+
+
+
+MARK PARAMETERS AS PARAMETERS!!! AND ADJUST ONLY THEM!!! And save only them, and output how many you have in the model
+    but there's also constants. so basically everything that is a result of a computation, you can't change/set their values! from the outside. and shouldn't be stored of course. views too.
+
+add convolutions and see if that helps to learn it faster
+different optimizers
+    learn adam
+
+different activation functions
+manually driving lr etc. lr schedules
+different batch sizes
+different weight initializations
+
+architecture changes
+
+different number of layers
+
+different number of neurons per layer
+
+learn softmax etc. all the tricks
+
+
+
+
+
+try language modeling finally
+
+
+different architecture: sdrs | trees | somehow voting etc.
+
+better load/save
+make compatible with ggml/tinygrad

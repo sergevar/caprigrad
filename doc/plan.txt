@@ -1,0 +1,31 @@
+Tensor
+
+
+#define FFML_MAX_DIMS           4
+#define FFML_MAX_NODES          4096
+#define FFML_MAX_PARAMS         16
+#define FFML_MAX_CONTEXTS       64
+
+#define FFML_ASSERT(x) \
+    do { \
+        if (!(x)) { \
+            fprintf(stderr, "FFML_ASSERT: %s:%d: %s\n", __FILE__, __LINE__, #x); \
+            abort(); \
+        } \
+    } while (0)
+
+struct ffml_object;
+struct ffml_context;
+
+[] Be careful with updating params/non-params
+    [] consts - mark somehow?
+    [] don't update views, otherwise you will do them twice!
+
+[] isview recursive!
+
+[] scalar broadcasting?
+[] ffml_nelem can be cached
+
+[] performance
+    [] most used operations, especially lookups
+    [] uint64_t might be overkill?
