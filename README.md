@@ -1,9 +1,14 @@
-= Caprigrad
+# Caprigrad
 
 An experiment to write an autograd engine (mini Pytorch clone) purely in C++, to play with training AI models and backpropagation on a low level
 
+![Caprigrad](doc/screenshot.jpg)
+
+## Progress
+
 - [x] Tensor manipulation library
-    - [x] dimensions
+    - [x] dimensions, coordinates
+	- [x] memory management, pool, allocator
     - [x] strides, broadcasting
     - [x] tensor ops - forward and backward pass
     	- [x] FFML_OP_LOOKUP

@@ -2,3 +2,4 @@ node_modules
 build
 include
 mnist_model.bin
+.DS_Store
